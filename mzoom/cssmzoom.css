@@ -1,0 +1,76 @@
+/**	CSS MZOOM
+******************/
+#mzoom_boxzoom{
+	position:absolute;
+	z-index:100;
+	margin:0px;
+	top:0px;
+	text-align:center;
+}
+#mzoom_boxzoomf {
+	position:absolute;
+	background-color:#000;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	z-index:90;
+}
+#mzoom_btaoClose{
+	width:64px;
+	height:31px;
+	position:absolute;
+	right: 0px;
+	z-index:100;
+	cursor:pointer;
+	background:url(close.gif) no-repeat;
+}
+#mzoom_loading{
+	width:115px;
+	height:13px;
+	position:absolute;
+	z-index:80;
+	background:url(loading.gif) no-repeat;
+}
+#mzoom_boximg{
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	overflow: hidden;
+}
+#mzoom_QuadMiniaturas{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    /*background:url(fundominiaturas.jpg) repeat-x;*/
+    background-color:#262626;
+}
+#mzoom_miniaturas {
+	position: relative;
+	overflow: hidden;
+	height:100px;
+}
+#mzoom_quadNav{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#mzoom_miniaturas .mzoom_quadgal{
+	width: 110px;
+	display:block;	
+	float: left; 
+	overflow: hidden; 
+}
+#mzoom_miniaturas img {
+	width: 100px;
+	height: 100px;
+}
+.mzoom_boxnavleft{
+	float:left;
+	cursor:pointer;
+	background:url(btoesnaveleft.jpg) no-repeat;
+}
+.mzoom_boxnavright{
+	float:right;
+	cursor:pointer;
+	background:url(btoesnavright.jpg) no-repeat;
+}
