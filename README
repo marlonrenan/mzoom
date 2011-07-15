@@ -1,0 +1,56 @@
+mzoom, versão 1.0
+
+O QUE É?
+
+O mzoom é uma ferramenta para exibir imagens, de uma mesma galeria em fulscreen, se a imagem ampliada for maior que a tela, você pode movê-la paraver as partes 
+não exibidas.
+Foi construída usando a biblioteca JQuery
+
+RECURSOS:
+
+ - Arrastar a imagem pela tela para ver as partes não exibidas (em caso de imagem em alta resolução).
+ - Customizável por css
+ - Exibição em miniaturas das imagens, com ações imbutidas de navegação
+ - Opacidade de fundo ajustável
+ - Exibir imagens de uma mesma galeria
+
+
+OPÇÕES DISPONÍVEIS:
+
+ - showall	: true, // 
+ - drag		: true, // habilita drag and drop
+ - thumb	: true // se exibe miniaturas
+
+
+COMO USAR?
+
+1. Adicione o arquivo css
+	<link rel="stylesheet" type="text/css" href="mzoom/cssmzoom.css" />
+
+2. Inclua os arquivos js necessários
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="mzoom/mzoom.js"></script>
+
+4. Criando o html
+
+	<ul class="mzoom">
+            <li><a href="http://images.paraorkut.com/img/papeldeparede/1024x768/m/mar-1218.jpg"><img src="http://images.paraorkut.com/img/papeldeparede/1024x768/m/mar-1218.jpg" alt="" /></a></li>
+            <li><a href="http://www.ternuraturismo.com.br/wp-content/uploads/2010/12/alto-mar.jpg"><img src="http://www.ternuraturismo.com.br/wp-content/uploads/2010/12/alto-mar.jpg" alt="" /></a></li>
+        </ul>
+
+5. Rodando o plugin usando JQuery
+
+	<script type="text/javascript">
+            $(document).ready(function(){
+                    $('.mzoom li').mzoom({
+                            showall	: false,
+                            drag	: false,
+                            thumb	: false
+                    });
+            });
+        </script>
+
+
+É isso pessoal, abraço
+Também agradeço ao grande amigo Bruno Porto (http://www.brunoporto.com.br/) por ter me ajudado com o desenvolvimento.
